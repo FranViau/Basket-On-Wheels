@@ -26,6 +26,6 @@ function UnityProgress(gameInstance, progress) {
     gameInstance.logo.style.display = gameInstance.progress.style.display =
       "none";
     todo.style.display = "block";
-    circle.style.display = "none";
+    loader.style.display = "none";
   }
 }

@@ -39,8 +39,8 @@
 </head>
 
 <body>
-
-  <div id="circle">
+  <!-- LOADER -->
+  <div id="circle" >
     <div class="loader">
       <div class="loader">
         <div class="loader"></div>
@@ -55,7 +55,7 @@
       <nav class="my-2 my-md-0 mr-md-3">
         <a id="toggle" class="p-2 text-dark" style="font-size: 20px;" href="#imagenes">Galeria</a>
         <a class="p-2 text-dark" style="font-size: 20px;" href="#nosotros">Nosotros</a>
-        <a class="p-2 text-dark" style="font-size: 20px;" href="#juego">Juego</a>
+        <a class="p-2 text-dark d-none d-sm-inline" style="font-size: 20px;" href="#juego">Juego</a>
       </nav>
     </div>
     <!-- FIN HEADER -->
@@ -117,47 +117,48 @@
     </div>
     <br><br>
     <!-- JUEGO -->
-    <h1 id="juego" class="display-4 mt-4 md-5 pb-md-4 mx-auto text-center">Nuestro Juego</h1>
+    <div class="d-none d-sm-block">
+      <h1 id="juego" class=" mt-4 md-5 pb-md-4 mx-auto text-center">Nuestro Juego</h1>
 
-    <div style="width: 960px; height: 542px; margin-top:0px;" class="text-center container">
-      <div class="webgl-content">
-        <div id="gameContainer" style="width: 960px; height: 542px">
+      <div style="width: 100%; max-width: 960px; max-height: 542px; margin-top:0px;" class="text-center container">
+        <div class="webgl-content">
+          <div id="gameContainer" style="width: 960px; height: 542px">
+          </div>
+          <img width="40px" class="completa" src="./TemplateData/fullscreen1.png"
+            onclick="gameInstance.SetFullscreen(1)" alt="">
         </div>
-        <img width="40px" class="completa" src="./TemplateData/fullscreen1.png" onclick="gameInstance.SetFullscreen(1)"
-          alt="">
       </div>
+      <br>
+      <footer class=" text-center container">
+        <p>&copy; ©2020 Basket On Wheels. Todos los derechos reservados</p>
+      </footer>
     </div>
-  <br>
-  <footer class=" text-center container">
-    <p>&copy; ©2020 Basket On Wheels. Todos los derechos reservados</p>
-  </footer>
-  </div>
 
-  <script>
-    var scroll = new SmoothScroll('a[href*="#"]', {
-      speed: 1400
-    });
-    $('.owl-carousel').owlCarousel({
-      loop: true,
-      margin: 10,
-      responsiveClass: true,
-      responsive: {
-        0: {
-          items: 1,
-          nav: true
-        },
-        600: {
-          items: 1,
-          nav: true
-        },
-        1000: {
-          items: 1,
-          nav: true,
-          loop: true
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1400
+      });
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: true
+          },
+          600: {
+            items: 1,
+            nav: true
+          },
+          1000: {
+            items: 1,
+            nav: true,
+            loop: true
+          }
         }
-      }
-    });
-  </script>
+      });
+    </script>
 </body>
 
 </html>

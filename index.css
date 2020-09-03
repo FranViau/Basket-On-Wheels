@@ -1,13 +1,20 @@
 /* PRICING EXAMPLE BOOTSTRAP¨*/
 html {
   font-size: 14px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
 }
 @media (min-width: 768px) {
   html {
     font-size: 16px;
   }
 }
-
+@media (max-width:768px){
+  #circle{
+    display: none !important;
+  }
+}
 .container {
   max-width: 960px;
 }
