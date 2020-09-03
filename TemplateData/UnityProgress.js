@@ -1,4 +1,7 @@
 function UnityProgress(gameInstance, progress) {
+    var todo = document.getElementById("todo");
+    var loader = document.getElementById("circle")
+    todo.style.display = "none";
   if (!gameInstance.Module)
     return;
   if (!gameInstance.logo) {
@@ -19,6 +22,10 @@ function UnityProgress(gameInstance, progress) {
   }
   gameInstance.progress.full.style.width = (100 * progress) + "%";
   gameInstance.progress.empty.style.width = (100 * (1 - progress)) + "%";
-  if (progress == 1)
-    gameInstance.logo.style.display = gameInstance.progress.style.display = "none";
+  if (progress == 1) {
+    gameInstance.logo.style.display = gameInstance.progress.style.display =
+      "none";
+    todo.style.display = "block";
+    circle.style.display = "none";
+  }
 }
