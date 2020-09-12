@@ -54,6 +54,12 @@ html {
   font-size: 90px;
   font-weight: 700;
 }
+.owl-next:focus{
+  outline:none
+}
+.owl-prev:focus{
+  outline:none
+}
 /* UNITY */
 
 .webgl-content{
@@ -79,6 +85,7 @@ body{
   width:120px;
   height:120px;
   z-index: 5;
+  text-align: center;
 }
 .loader{
   padding:5px;
