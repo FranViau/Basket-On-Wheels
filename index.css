@@ -125,3 +125,19 @@ body {
     transform: rotate(360deg)
   }
 }
+
+.redes {
+  display: flex;
+  justify-content: space-around;
+}
+
+.redes a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.redes a img {
+  width: 23px;
+  margin-right: 20px;
+}

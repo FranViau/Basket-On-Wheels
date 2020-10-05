@@ -38,18 +38,19 @@
   <script src="../../owlcarousel/dist/owl.carousel.js"></script>
   <!-- Propios -->
   <link rel="stylesheet" href="index.css">
+  <script src="./index.js"></script>
 </head>
 
 <body>
   <!-- LOADER -->
-  <!-- <div id="circle" >
+  <div id="circle">
     <div class="loader">
       <div class="loader">
         <div class="loader"></div>
       </div>
     </div>
     <p class="mt-5 ml-3 text-center" style="font-size: 22px;">Cargando...</p>
-  </div> -->
+  </div>
   <div id="todo">
     <div class="d-flex flex-column flex-md-row align-items-center p-1 px-md-4 mb-3 bg-white border-bottom shadow-sm">
       <img class="ml-5 mr-md-auto font-weight-normal" src="../assets/basket-icon.png"
@@ -58,6 +59,7 @@
         <a id="toggle" class="p-2 text-dark" style="font-size: 20px;" href="#imagenes">Galeria</a>
         <a class="p-2 text-dark" style="font-size: 20px;" href="#nosotros">Nosotros</a>
         <a class="p-2 text-dark d-none d-sm-inline" style="font-size: 20px;" href="#juego">Juego</a>
+        <a class="p-2 text-dark d-none d-sm-inline" style="font-size: 20px;" href="#contacto">Contacto</a>
       </nav>
     </div>
     <!-- FIN HEADER -->
@@ -83,8 +85,8 @@
           <img class="bd-placeholder-img  rounded-circle" width="140px" height="140px" src="assets/tathi.jpeg" alt="">
           <h2>Tathiana</h2>
           <p style="font-size:18px">Hardware Developer</p>
-          <a href="https://www.instagram.com/tathi_pp/" rel="noopener noreferrer" target="_blank"><img width="30px"
-              src="assets/instagram.png" alt=""></a>
+          <a class="mr-1" href="https://www.instagram.com/tathi_pp/" rel="noopener noreferrer" target="_blank"><img
+              width="30px" src="assets/instagram.png" alt=""></a>
           <a style="color:black;" href="mailto:tathianapansowy@gmail.com" rel="noopener noreferrer" target="_blank"><img
               width="30px" src="assets/gmail.png" alt=""></a>
         </div>
@@ -92,8 +94,8 @@
           <img class="bd-placeholder-img rounded-circle" width="140px" height="140px" src="assets/vitola.jpeg" alt="">
           <h2>Victoria</h2>
           <p style="font-size:18px">Designer</p>
-          <a href="https://www.instagram.com/vickyyvitola/" rel="noopener noreferrer" target="_blank"><img width="30px"
-              src="assets/instagram.png" alt=""></a>
+          <a class="mr-1" href="https://www.instagram.com/vickyyvitola/" rel="noopener noreferrer" target="_blank"><img
+              width="30px" src="assets/instagram.png" alt=""></a>
           <a style="color:black;" href="mailto:vicky.vitolaagostinetti@gmail.com" rel="noopener noreferrer"
             target="_blank"><img width="30px" src="assets/gmail.png" alt=""></a>
         </div>
@@ -101,9 +103,9 @@
           <img class="bd-placeholder-img rounded-circle" width="140px" height="140px" src="assets/franco.jpg" alt="">
           <h2>Franco</h2>
           <p style="font-size:18px">Software Developer</p>
-          <a href="https://www.instagram.com/fran.viau/" rel="noopener noreferrer" target="_blank"><img width="30px"
-              src="assets/instagram.png" alt=""></a>
-          <a href="https://www.linkedin.com/in/franco-rodriguez-viau-2bb5741b7/" rel="noopener noreferrer"
+          <a class="mr-1" href="https://www.instagram.com/fran.viau/" rel="noopener noreferrer" target="_blank"><img
+              width="30px" src="assets/instagram.png" alt=""></a>
+          <a class="mr-1" href="https://www.linkedin.com/in/franco-rodriguez-viau-2bb5741b7/" rel="noopener noreferrer"
             target="_blank"><img width="30px" src="assets/linkedin.png" alt=""></a>
           <a style="color:black;" href="mailto:franco.rodriguez.viau@gmail.com" rel="noopener noreferrer"
             target="_blank"><img width="30px" src="assets/gmail.png" alt=""></a>
@@ -112,8 +114,8 @@
           <img class="bd-placeholder-img rounded-circle" width="140px" height="140px" src="assets/dan.jpeg" alt="">
           <h2>Dan</h2>
           <p style="font-size:18px">Software Developer</p>
-          <a href="https://www.instagram.com/danshlamovitz/" rel="noopener noreferrer" target="_blank"><img width="30px"
-              src="assets/instagram.png" alt=""></a>
+          <a class="mr-1" href="https://www.instagram.com/danshlamovitz/" rel="noopener noreferrer" target="_blank"><img
+              width="30px" src="assets/instagram.png" alt=""></a>
           <a style="color:black;" href="mailto:shlamovitzd@gmail.com" rel="noopener noreferrer" target="_blank"><img
               width="30px" src="assets/gmail.png" alt=""></a>
         </div>
@@ -122,7 +124,7 @@
     <br><br>
     <!-- JUEGO -->
     <div class="d-none d-sm-block">
-      <h1 id="juego" class=" mt-4 md-5 pb-md-4 mx-auto text-center">Nuestro Juego</h1>
+      <h1 id="juego" class=" mt-4 md-5 pb-md-4 mx-auto text-center font-weight-normal">Nuestro Juego</h1>
 
       <div style="width: 100%; max-width: 960px; max-height: 542px; margin-top:0px;" class="text-center container">
         <div class="webgl-content">
@@ -133,7 +135,19 @@
         </div>
       </div>
       <br>
-      <footer class=" text-center container">
+      <!-- CONTACTO -->
+      <h1 class="display-4 mb-5 text-center" id="contacto">Nuestras redes</h1>
+      <div class="container redes mb-5">
+        <a href="https://www.instagram.com/basketonwheels/" class="ml-5"><img src="./assets/instagram.png"
+            alt="" />@basketonwheels</a> <br> <br>
+        <a href="https://www.linkedin.com/company/71086669/admin/" class="ml-5"><img src="./assets/linkedin.png"
+            alt="" />Basket On
+          Wheels</a> <br> <br>
+        <a href="mailto:basketonwheels0@gmail.com" class="ml-5"><img src="./assets/gmail.png"
+            alt="" />basketonwheels0@gmail.com</a>
+
+      </div>
+      <footer class=" text-center container mt-4">
         <p>&copy; ©2020 Basket On Wheels. Todos los derechos reservados</p>
       </footer>
     </div>
