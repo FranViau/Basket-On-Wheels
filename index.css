@@ -5,18 +5,29 @@ html {
   min-height: 100vh;
   margin: 0;
 }
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
   }
 }
-@media (max-width:768px){
-  #circle{
+
+@media (max-width:768px) {
+  #circle {
     display: none !important;
   }
 }
+
 .container {
   max-width: 960px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .pricing-header {
@@ -28,75 +39,89 @@ html {
 }
 
 /* OWL CAROUSEL */
-.owl-stage{
-    display: flex;
+.owl-stage {
+  display: flex;
 }
-.owl-next{
-  position:absolute; 
-  top:20%; 
-  left: 81%; 
+
+.owl-next {
+  position: absolute;
+  top: 20%;
+  left: 81%;
   height: 0px;
 }
-.owl-prev{
-  position:absolute; 
-  top:20%; 
+
+.owl-prev {
+  position: absolute;
+  top: 20%;
   right: 84%;
-  width: 0px; 
-  
+  width: 0px;
+
 }
-.owl-next > span{
-  color:black;
+
+.owl-next>span {
+  color: black;
   font-size: 90px;
   font-weight: 700;
 }
-.owl-prev> span{
-  color:black;
+
+.owl-prev>span {
+  color: black;
   font-size: 90px;
   font-weight: 700;
 }
-.owl-next:focus{
-  outline:none
+
+.owl-next:focus {
+  outline: none
 }
-.owl-prev:focus{
-  outline:none
+
+.owl-prev:focus {
+  outline: none
 }
+
 /* UNITY */
 
-.webgl-content{
+.webgl-content {
   position: relative;
 }
-.completa{
+
+.completa {
   cursor: pointer;
   position: absolute;
-  top:0px;
+  top: 0px;
   right: -28px;
   z-index: 2;
 }
+
 /* LOADER */
 
-body{
-  background-color:#efefef !important;
+body {
+  background-color: #efefef !important;
 }
-#circle{
+
+#circle {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform:translate(-50%,-50%);
-  width:120px;
-  height:120px;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
   z-index: 5;
   text-align: center;
 }
-.loader{
-  padding:5px;
-  width:calc(100%-0px);
-  height:calc(100%-0px);
+
+.loader {
+  padding: 5px;
+  width: calc(100%-0px);
+  height: calc(100%-0px);
   border: 3px solid #ffffff;
   border-radius: 50%;
   border-bottom: 3px solid red;
   border-top: 3px solid red;
-  animation:rotate 15s linear;
+  animation: rotate 15s linear;
 }
-@keyframes rotate{
-  100% {transform:rotate(360deg)}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg)
+  }
 }

@@ -19,7 +19,9 @@
   <script src="TemplateData/UnityProgress.js"></script>
   <script src="Build/UnityLoader.js"></script>
   <script>
-    var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Basket On Wheels.json", { onProgress: UnityProgress });
+    var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Basket On Wheels.json", {
+      onProgress: UnityProgress
+    });
   </script>
   <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/pricing/">
 
@@ -40,18 +42,18 @@
 
 <body>
   <!-- LOADER -->
-  <div id="circle" >
+  <!-- <div id="circle" >
     <div class="loader">
       <div class="loader">
         <div class="loader"></div>
       </div>
     </div>
     <p class="mt-5 ml-3 text-center" style="font-size: 22px;">Cargando...</p>
-  </div>
+  </div> -->
   <div id="todo">
     <div class="d-flex flex-column flex-md-row align-items-center p-1 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-      <img class="my-0 mr-md-auto font-weight-normal" src="../assets/logo.jpeg"
-        style="max-width: 200px; cursor: pointer;" alt="">
+      <img class="ml-5 mr-md-auto font-weight-normal" src="../assets/basket-icon.png"
+        style="max-width: 80px; cursor: pointer;" alt="Logo Basket On Wheels">
       <nav class="my-2 my-md-0 mr-md-3">
         <a id="toggle" class="p-2 text-dark" style="font-size: 20px;" href="#imagenes">Galeria</a>
         <a class="p-2 text-dark" style="font-size: 20px;" href="#nosotros">Nosotros</a>
@@ -63,12 +65,12 @@
     <div id="imagenes">
       <h1 class="display-4 md-5 mb-4 pb-md-4 mx-auto text-center">Galeria</h1>
       <div class="owl-carousel owl-theme container">
-        <div style="width: 500px;" class=" mx-auto shadow-lg "> <img class="shadow-lg" src="../assets/slide1.jpeg"
-            alt=""></div>
-        <div style="width: 500px;" class=" mx-auto shadow-lg "> <img class="shadow-lg" src="../assets/slide2.jpeg"
-            alt=""></div>
-        <div style="width: 500px;" class=" mx-auto shadow-lg "> <img class="shadow-lg" src="../assets/slide3.jpeg"
-            alt=""></div>
+        <div style="width: 500px; object-fit: cover; height: 375px;" class=" mx-auto shadow-lg "> <img class="shadow-lg"
+            src="../assets/slide1.jpeg" alt=""></div>
+        <div style="width: 500px; object-fit: fill; height: 375px;" class=" mx-auto shadow-lg "> <img class="shadow-lg"
+            src="../assets/slide2.jpeg" alt=""></div>
+        <div style="width: 500px; object-fit: cover; height: 375px;" class=" mx-auto shadow-lg "> <img class="shadow-lg"
+            src="../assets/slide3.jpeg" alt=""></div>
       </div>
       <!-- FIN CAROUSEL -->
     </div>
@@ -101,6 +103,8 @@
           <p style="font-size:18px">Software Developer</p>
           <a href="https://www.instagram.com/fran.viau/" rel="noopener noreferrer" target="_blank"><img width="30px"
               src="assets/instagram.png" alt=""></a>
+          <a href="https://www.linkedin.com/in/franco-rodriguez-viau-2bb5741b7/" rel="noopener noreferrer"
+            target="_blank"><img width="30px" src="assets/linkedin.png" alt=""></a>
           <a style="color:black;" href="mailto:franco.rodriguez.viau@gmail.com" rel="noopener noreferrer"
             target="_blank"><img width="30px" src="assets/gmail.png" alt=""></a>
         </div>
