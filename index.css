@@ -126,9 +126,11 @@ body {
   }
 }
 
-.redes {
-  display: flex;
-  justify-content: space-around;
+@media only screen and (min-width: 768px) {
+  .redes {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .redes a {
