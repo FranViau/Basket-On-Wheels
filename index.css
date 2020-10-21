@@ -147,7 +147,7 @@ body {
 }
 #texto-nosotros .row img {
 	margin: 2rem;
-	height: 130px;
+	height: 80px;
 	object-fit: cover;
 }
 #texto-nosotros p {
